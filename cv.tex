@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75, margin=1in]{geometry}
+\usepackage[scale=0.75, margin=0.5in]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -55,27 +55,47 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+\section{Research Interests}
+I explore different ways to schedule tasks for parallel execution.  This is a challenging problem because scheduling constraints
+are not always known when building the schedule, so a good scheduler must adapt to new information.  When building these schedulers,
+we can go beyond simply adhering to constraints and use our available flexibility to seek the best schedules, which could not necessarily
+have been generated statically even if all constraints were known.  My past work has been published at ISCA, a top tier computer architecture
+conference.
 
 \section{Education}
-\cventry{2022--2026}{PhD}{University of Toronto}{Toronto}{}{Electrical and Computer Engineering
+\cventry{2022--present}{PhD}{University of Toronto}{Toronto}{}{Electrical and Computer Engineering
 \begin{itemize}
-\item Bell Graduate Scholarship
+%\item Bell Graduate Scholarship
+\item Advisor: Professor Mark Jeffrey 
 \end{itemize}}
 \cventry{2020--2022}{MASc}{University of Toronto}{Toronto}{\textit{}}{Electrical and Computer Engineering
 \begin{itemize}
-\item Edward S Rogers Sr. Graduate Scholarship 
+\item Thesis: A Scalable Architecture for Reprioritizing Ordered Parallelism
+\item Advisor: Professor Mark Jeffrey 
+%\item Edward S Rogers Sr. Graduate Scholarship 
 \end{itemize}}
 \cventry{2015-2020}{BASc in Engineering Science}{University of Toronto}{Toronto}{}{Electrical and Computer Engineering  % arguments 3 to 6 can be left empty
 \begin{itemize}
-\item President's Entrance Scholarship
+\item Graduated with Honours
+\item Thesis: Extending Multi-path Execution to a Multiprocessor Context
+%\item President's Entrance Scholarship
 \item Dean's list 2015-2016, 2016-2017, 2017-2018, 2019-2020
 \end{itemize}}
-\section{Research}
-\cventry{2022}{Publication}{A Scalable Architecture for Reprioritizing Ordered Parallelism}{ISCA 2022}{DOI: 10.1145/3470496.3527387}{}
-\cventry{2022}{Masters Thesis}{A Speculative Hardware Scheduler Supporting Priority Updates}{}{}{}
-\cventry{2020}{Undergraduate Thesis}{Extending Multi-path Execution to a Multiprocessor Context}{}{}{}
-\vspace{-0.1in}
-\section{Experience}
+\section{Peer-Reviewed Publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{pubs}                        
+%\cventry{2022}{Publication}{A Scalable Architecture for Reprioritizing Ordered Parallelism}{ISCA 2022}{DOI: 10.1145/3470496.3527387}{}
+%\cventry{2022}{Masters Thesis}{A Speculative Hardware Scheduler Supporting Priority Updates}{}{}{}
+%\cventry{2020}{Undergraduate Thesis}{Extending Multi-path Execution to a Multiprocessor Context}{}{}{}
+
+\section{Scholarships and Awards}
+	\cventry{2022-2023}{Bell Graduate Scholarship}{University of Toronto}{}{}{\$20000}
+	\cventry{2021-2022}{Queen Elizabeth II GSST}{University of Toronto}{}{}{\$15000}
+	\cventry{2017}{NSERC Undergraduate Student Research Award}{University of Toronto}{}{}{\$6000}
+	\cventry{2015}{President's Entrance Scholarship}{University of Toronto}{}{}{\$2000}
+
+\section{Work Experience}
 %\subsection{Vocational}
 \cventry{2020-2023}{Teaching Assistant}{University of Toronto}{}{}{
 \begin{itemize}
@@ -114,9 +134,9 @@
 %\cvitemwithcomment{Language 2}{Skill level}{Comment}
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
 
-\section{Skills}
-\cvdoubleitem{Programming:}{C/C++, Java, Python, Perl}{FPGAs:}{Verilog}
-\cvdoubleitem{CAD Tools:}{IAR, Quartus, Vivado}{Other:}{Arduino, Matlab, etc}
+%\section{Skills}
+%\cvdoubleitem{Programming:}{C/C++, Java, Python, Perl}{FPGAs:}{Verilog}
+%\cvdoubleitem{CAD Tools:}{IAR, Quartus, Vivado}{Other:}{Arduino, Matlab, etc}
 
 %\section{Interests}
 %\cvitem{hobby 1}{Description}
